@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Engineer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: #333;
+            color: white;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        section {
+            background: white;
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .about-content {
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .skill-category li {
+            padding: 5px 0;
+            color: #555;
+        }
+        
+        .project {
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #764ba2;
+            border-radius: 5px;
+        }
+        
+        .project h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .project p {
+            color: #666;
+            margin: 10px 0;
+        }
+        
+        .project-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        
+        .experience-item {
+            margin: 20px 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        
+        .experience-item h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .experience-item .role {
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .experience-item .date {
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        .contact-section {
+            text-align: center;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 5px 5px 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moyinoluwa Adegbolu</h1>
+        <p>Network Engineer</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Welcome to my portfolio. I am a Network Engineer with a strong networking foundation and hands-on experience across cloud and modern infrastructure environments.</p>
+                <p style="margin-top: 15px;">While networking remains my core identity, I use tools like AWS, automation, and security practices to design networks that scale, perform, and adapt to today's infrastructure demands.</p>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <h3>AWS Personal Finance Tracker - VPC Architecture</h3>
+                <p><strong>Technologies:</strong> AWS VPC, EC2, RDS Aurora, Application Load Balancer, Security Groups, NAT Gateway, Python Flask</p>
+                <p>A full-stack expense tracking application deployed on AWS demonstrating enterprise-grade VPC networking and security practices.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Multi-AZ VPC architecture with public, private, and database subnets</li>
+                    <li>Security Group rules implementing least-privilege access</li>
+                    <li>Aurora MySQL Multi-AZ cluster for high availability</li>
+                    <li>Application Load Balancer distributing traffic across EC2 instances</li>
+                    <li>IAM roles for secure instance management</li>
+                </ul>
+                <p style="margin-top: 10px;"><a href="https://github.com/Moyinoluwa-a/aws-finance-tracker" class="project-link">View on GitHub →</a></p>
+            </div>
+            
+            <div class="project">
+                <h3>Portfolio Website - S3 + CloudFront</h3>
+                <p><strong>Technologies:</strong> AWS S3, CloudFront, HTML/CSS, Bucket Policies</p>
+                <p>This portfolio website deployed on AWS S3 with CloudFront CDN for global content delivery.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Static website hosting on S3</li>
+                    <li>CloudFront distribution for fast global delivery</li>
+                    <li>S3 bucket policies for security</li>
+                    <li>Low-cost, high-availability hosting solution</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>AWS Services</h3>
+                    <ul>
+                        <li>VPC & Networking</li>
+                        <li>EC2 & Auto Scaling</li>
+                        <li>RDS & Databases</li>
+                        <li>Load Balancers</li>
+                        <li>S3 & CloudFront</li>
+                        <li>IAM & Security</li>
+                        <li>CloudWatch</li>
+                        <li>Lambda</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Networking</h3>
+                    <ul>
+                        <li>Routing</li>
+                        <li>Switching</li>
+                        <li>Access Control List</li>
+                        <li>Route Protocols</li>
+                        <li>Layer 2 Protocol</li>
+                        <li>Subnetting</li>
+                        <li>Troubleshooting</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming & Tools</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Bash/Shell</li>
+                        <li>Git & GitHub</li>
+                        <li>AWS Console</li>
+                        <li>HTML/CSS</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>AWS Cloud Practitioner✓</li>
+                        <li>Cisco Certified Network Engineer (CCNA)✓</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            
+            <div class="experience-item">
+                <h3>INQ.Digital</h3>
+                <p class="role">Technical Support Engineer L1</p>
+                <p class="date">February - Present</p>
+                <p>Monitor and troubleshoot network connectivity issues and services outages for enterprise customers. </p>
+            </div>
+            
+            <div class="experience-item">
+                <h3>Self-Directed Learning & Projects</h3>
+                <p class="role">AWS Cloud Learning</p>
+                <p class="date">January 2026</p>
+                <p>Completed AWS Cloud Practitioner certification and built hands-on projects demonstrating VPC architecture, security best practices, and cloud infrastructure design.</p>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-section">
+                <p>I'm always open to discussing networking challenges, infrastructure design, and real-world implementation across both on-prem and cloud environments.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <a href="mailto:[YOUR-EMAIL@example.com]">adegbolu.oluwa@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/in/moyinoluwaadegbolu" target="_blank">linkedin.com/in/moyinoluwaadegbolu</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/Moyinoluwa-a" target="_blank">github.com/Moyinoluwa-a</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Moyinoluwa. All rights reserved. | Hosted on AWS S3 + CloudFront</p>
+    </footer>
+</body>
+</html>
